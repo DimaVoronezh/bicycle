@@ -99,7 +99,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		}
 
 
-
 		if (dots) {
 			btns.forEach((item, i) => {
 				item.addEventListener('click', function () {
@@ -144,7 +143,7 @@ window.addEventListener('DOMContentLoaded', () => {
 			if (scrollByTouch) {
 				endPos = e.changedTouches[0].pageX;
 				if (endPos >= startPos + 150) {
-					if (currentSlide != btns.length - 1) {
+					if (currentSlide != slides.length - 1) {
 						currentSlide++;
 					}
 				} else if (endPos <= startPos - 150) {
